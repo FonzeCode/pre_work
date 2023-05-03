@@ -40,10 +40,16 @@ max_num_in_list(a_list=[2, 34, 45, 67, 656, 2334, 23])
 # Type (true/false)
 
 def is_leap_year(a_year):
-     return a_year % 4 == 0 or a_year % 400 == 0
+     return a_year % 4 == 0 and (a_year % 400 == 0 or a_year % 100 != 0)
+
           
-print(is_leap_year(a_year=2020))
-print(is_leap_year(a_year=2022))
+print(is_leap_year(a_year=1600))
+print(is_leap_year(a_year=1900))
+print(is_leap_year(a_year=2024))
+
+
+
+
 
 
 
